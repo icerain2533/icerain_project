@@ -1,0 +1,24 @@
+2015-02-26 16:38:21,361 INFO  [gj][worker 1] rrrrrrrrrrrrrr
+2015-02-26 17:49:32,220 INFO  [gj][worker 1] rrrrrrrrrrrrrr
+2015-02-26 17:49:32,244 INFO  [wsgi][worker 1] 127.0.0.1 - - [26/Feb/2015:17:49:32 +0800] "GET / HTTP/1.1" 200 4577 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36"
+2015-02-26 17:49:32,351 INFO  [wsgi][worker 0] 127.0.0.1 - - [26/Feb/2015:17:49:32 +0800] "GET /static/css.css HTTP/1.1" 304 - "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36"
+2015-02-26 17:49:32,358 INFO  [wsgi][worker 2] 127.0.0.1 - - [26/Feb/2015:17:49:32 +0800] "GET /static/js/jquery-1.8.3.min.js HTTP/1.1" 304 - "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36"
+2015-02-26 17:49:32,490 INFO  [wsgi][worker 3] 127.0.0.1 - - [26/Feb/2015:17:49:32 +0800] "GET /favicon.ico HTTP/1.1" 404 793 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36"
+2015-02-26 17:49:43,592 INFO  [wsgi][worker 5] 127.0.0.1 - - [26/Feb/2015:17:49:43 +0800] "GET /delete?id=20150211_165833 HTTP/1.1" 200 13 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36"
+2015-02-26 17:49:44,667 INFO  [gj][worker 6] rrrrrrrrrrrrrr
+2015-02-26 17:49:44,667 INFO  [wsgi][worker 6] 127.0.0.1 - - [26/Feb/2015:17:49:44 +0800] "GET / HTTP/1.1" 200 4185 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36"
+2015-02-26 17:50:15,285 INFO  [gj][worker 7] rrrrrrrrrrrrrr
+2015-02-26 17:50:15,286 INFO  [wsgi][worker 7] 127.0.0.1 - - [26/Feb/2015:17:50:15 +0800] "GET / HTTP/1.1" 200 4185 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36"
+2015-02-26 17:50:20,641 INFO  [gj][worker 9] rrrrrrrrrrrrrr
+2015-02-26 17:50:20,644 INFO  [wsgi][worker 9] 127.0.0.1 - - [26/Feb/2015:17:50:20 +0800] "GET / HTTP/1.1" 200 4185 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36"
+2015-02-26 17:50:21,244 INFO  [gj][worker 1] rrrrrrrrrrrrrr
+2015-02-26 17:50:21,247 INFO  [wsgi][worker 1] 127.0.0.1 - - [26/Feb/2015:17:50:21 +0800] "GET / HTTP/1.1" 200 4185 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36"
+2015-02-26 17:50:21,971 INFO  [wsgi][worker 8] 127.0.0.1 - - [26/Feb/2015:17:50:21 +0800] "GET /toCreate HTTP/1.1" 200 2774 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36"
+2015-02-26 17:50:24,497 INFO  [wsgi][worker 0] 127.0.0.1 - - [26/Feb/2015:17:50:24 +0800] "GET /create?name=111&telephone=111 HTTP/1.1" 200 13 "http://127.0.0.1:8000/toCreate" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36"
+2015-02-26 17:50:25,657 INFO  [gj][worker 2] rrrrrrrrrrrrrr
+2015-02-26 17:50:25,667 INFO  [wsgi][worker 2] 127.0.0.1 - - [26/Feb/2015:17:50:25 +0800] "GET / HTTP/1.1" 200 4583 "http://127.0.0.1:8000/toCreate" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36"
+2015-02-27 09:49:05,361 INFO  [gj][worker 1] rrrrrrrrrrrrrr
+2015-02-27 09:49:05,398 INFO  [wsgi][worker 1] 127.0.0.1 - - [27/Feb/2015:09:49:05 +0800] "GET / HTTP/1.1" 200 4581 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36"
+2015-02-27 09:49:05,428 INFO  [wsgi][worker 0] 127.0.0.1 - - [27/Feb/2015:09:49:05 +0800] "GET /static/css.css HTTP/1.1" 304 - "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36"
+2015-02-27 09:49:05,431 INFO  [wsgi][worker 2] 127.0.0.1 - - [27/Feb/2015:09:49:05 +0800] "GET /static/js/jquery-1.8.3.min.js HTTP/1.1" 304 - "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36"
+2015-02-27 09:49:05,526 INFO  [wsgi][worker 3] 127.0.0.1 - - [27/Feb/2015:09:49:05 +0800] "GET /favicon.ico HTTP/1.1" 404 793 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36"

@@ -1,0 +1,51 @@
+  /*主面板样式*/
+    .container {
+        width:980px;
+        margin:0px auto;/*主面板DIV居中*/
+    }
+   /*顶部面板样式*/
+   .header {
+        width:100%;
+        height:45px;
+        border:1px #000 solid;
+    }
+
+    .header ul{
+        width:980px;/*设置元素宽度为980px*/
+        border:0px solid #000;/*设置一个颜色为#000，宽度为1px的边框*/
+        margin:0px auto 0px auto;/*也可以简写为margin:0 auto*/
+    }
+
+    .header ul li{
+        float:left;/*让li元素左浮动*/
+        list-style-type:none;
+    }
+
+    .header ul li a{
+        width:80px;/*设置元素宽为80px*/
+        height:28px;/*设置高度为28px*/
+        line-height:28px;/*设置行距为28px，让文字在每行的中间位置*/
+        background:#4c9ed9;/*设置元素的背景为红色*/
+        color:#FFF;/*文字颜色是白色*/
+        margin:5px 10px;
+        font-size:12px;/*用12号字*/
+        display:block;/*这个比较关键，因为a本身就是联级元素，本身不具有宽高，用这个把它变成块级元素，这样前面设置的宽和高就能起作用了*/
+        text-align:center;/*让文本居中*/
+        text-decoration:none; /*去掉下划线*/
+    }
+
+    /*中间部分面板样式*/
+    .main {
+        width:100%;
+        height:600px;
+        border:1px #000 solid;
+        border-top: 0px;
+    }
+    /*底部面板样式*/
+    .footer {
+        width:100%;
+        height:80px;
+        border:1px #000 solid;
+        border-top: 0px;
+    }
+

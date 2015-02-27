@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="${request.static_url('phoneweb:static/css.css')}" type="text/css" />
+     <script src="${request.static_url('phoneweb:static/js/jquery-1.8.3.min.js')}" type = "text/javascript"> </script>
+    <title>title</title>
+</head>
+<script language="JavaScript" type="text/javascript">
+    function changeDiv(disPlayId, divCount) {
+        for (i = 0; i <= divCount; i++) {
+            document.getElementById("tab_" + i).style.display = "none";//将所有的层都隐藏
+        }
+        document.getElementById(disPlayId).style.display = "block";//显示当前层
+    }
+
+    function showAll(displayId, divCount){
+          window.location.href = "/";
+    }
+    function createUser(displayId, divCount){
+       changeDiv(displayId,divCount);
+    }
+    function del(id){
+        if (window.confirm('你确定删除吗？')){
+            $.getJSON('/delete',{'id':id},function(data){
+                if (data["result"]==1) {
+                    alert("删除成功！");
+                } else {
+                    alert("删除失败！");
+                }
+                window.location.href = "/";
+            });
+        }
+    }
+    function edit(id, name, telephone){
+        window.location.href = "/toEdit?id="+id+"&name="+name+"&telephone="+telephone;
+    }
+</script>
+<body>
+   <div class="container">
+       <div class="header">
+           <ul>
+               <li><a href="/">所有联系人</a></li>
+               <li><a href="/toCreate" >新建联系人</a></li>
+               <li><a href="javascript:void(0)">导航2</a></li>
+           </ul>
+       </div>
+       <div class="main">
+           <div id="allUsers" style="font-size:12px;">
+               <table  style="border-collapse: collapse;" cellpadding="8" width="600" align="center" border=1>
+                 <thead>
+                       <tr>
+                           <th style="display: none"></th>
+                           <th>姓名</th>
+                           <th>联系方式</th>
+                           <th>操作</th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                    % for user in userInfos:
+                        <tr>
+                            <td style="display: none"></td>
+                            <td><a href="javascript:void(0)" onclick="edit('${user.get("id")}','${user.get("name")}','${user.get("telephone")}')">${user.get("name")}</a></td>
+                            <td>${user.get("telephone")}</td>
+                            <td><a href="javascript:void(0)" onclick="del('${user.get("id")}')">删除</a></td>
+                        </tr>
+                    % endfor
+                   </tbody>
+               </table>
+           </div>
+       </div>
+    </div>
+</body>
+</html>
